@@ -94,6 +94,37 @@
           }
         }
       }
+    },
+    "custom-button": {
+      "projectType": "library",
+      "root": "projects/custom-button",
+      "sourceRoot": "projects/custom-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/custom-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/custom-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/custom-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/custom-button/src/test.ts",
+            "tsConfig": "projects/custom-button/tsconfig.spec.json",
+            "karmaConfig": "projects/custom-button/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "taskbox"

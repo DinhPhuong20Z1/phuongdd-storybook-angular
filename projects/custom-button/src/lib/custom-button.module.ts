@@ -13,7 +13,7 @@ import { CustomButtonComponent } from './custom-button.component';
     BrowserModule
   ],
   exports: [
-
+    CustomButtonComponent,
   ]
 })
 export class CustomButtonModule { }

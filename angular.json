@@ -26,7 +26,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/theme.scss", "src/styles.scss", "src/styles.css"],
+            "styles": [
+            "src/theme.scss",
+            "src/styles.scss",
+            "src/styles.css",
+            "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+          ],
             "scripts": []
           },
           "configurations": {
@@ -215,6 +220,37 @@
             "main": "projects/component-dialog/src/test.ts",
             "tsConfig": "projects/component-dialog/tsconfig.spec.json",
             "karmaConfig": "projects/component-dialog/karma.conf.js"
+          }
+        }
+      }
+    },
+    "image-zoom": {
+      "projectType": "library",
+      "root": "projects/image-zoom",
+      "sourceRoot": "projects/image-zoom/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/image-zoom/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/image-zoom/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/image-zoom/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/image-zoom/src/test.ts",
+            "tsConfig": "projects/image-zoom/tsconfig.spec.json",
+            "karmaConfig": "projects/image-zoom/karma.conf.js"
           }
         }
       }

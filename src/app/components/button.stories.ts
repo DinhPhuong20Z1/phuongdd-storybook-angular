@@ -8,7 +8,7 @@ export default {
   component: CustomButtonComponent,
   decorators: [
     moduleMetadata({
-      declarations: [],
+      declarations: [CustomButtonComponent],
       imports: [MatButtonModule],
     })
   ]

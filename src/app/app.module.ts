@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
  import { InboxScreenComponent } from './components/inbox-screen.component';
  import { PureInboxScreenComponent } from './components/pure-inbox-screen.component';
  import { CustomButtonModule } from './../../projects/custom-button/src/lib/custom-button.module';
+import { MyLibModule } from 'projects/my-lib/src/public-api';
 
 @NgModule({
  declarations: [AppComponent, InboxScreenComponent, PureInboxScreenComponent],
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     // NgxsReduxDevtoolsPluginModule.forRoot(),
     // NgxsLoggerPluginModule.forRoot({ disabled: environment.production, }),
     CustomButtonModule,
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent],

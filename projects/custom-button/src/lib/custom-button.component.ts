@@ -2,30 +2,22 @@ import { Component, Input, OnInit, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'lib-custom-button',
-   template: ` <button
-   type="button"
-   (click)="onClick.emit($event)"
-   [ngClass]="classes"
-   [style.color]='color'
- >
-   {{ label }}
- </button>`,
+   template: `
+    <button *ngIf="type === 'primary'" mat-raised-button color="primary">
+    {{label}}
+  </button>
+  <button *ngIf="type === 'secondary'" mat-stroked-button color="primary">
+    {{label}}
+  </button>
+ `,
   styleUrls: ['./button.css'],
 })
 export class CustomButtonComponent  {
-  @Input() color: string = '#000';
-  label = 'Button';
-  @Input()
-  primary = false;
-  @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Input() label = 'Button';
+  @Input() type: 'primary' | 'secondary' = 'primary';
+  constructor() { }
 
-  public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-
-    return ['storybook-button', `storybook-button--${this.size}`, mode];
+  ngOnInit(): void {
   }
 
 

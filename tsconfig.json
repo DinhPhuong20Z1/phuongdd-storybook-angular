@@ -4,6 +4,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "component-date-picker": [
+        "dist/component-date-picker"
+      ],
+      "component-dialog": [
+        "dist/component-dialog"
+      ],
       "custom-button": [
         "dist/custom-button/custom-button",
         "dist/custom-button"
@@ -26,7 +32,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2020",
     "module": "es2020",
     "strictPropertyInitialization": false,
     "lib": ["es2020", "dom"]

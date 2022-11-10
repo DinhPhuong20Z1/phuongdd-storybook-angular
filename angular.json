@@ -26,7 +26,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "styles": ["src/theme.scss", "src/styles.scss", "src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -156,7 +156,68 @@
           }
         }
       }
+    },
+    "component-date-picker": {
+      "projectType": "library",
+      "root": "projects/component-date-picker",
+      "sourceRoot": "projects/component-date-picker/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/component-date-picker/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/component-date-picker/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/component-date-picker/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/component-date-picker/src/test.ts",
+            "tsConfig": "projects/component-date-picker/tsconfig.spec.json",
+            "karmaConfig": "projects/component-date-picker/karma.conf.js"
+          }
+        }
+      }
+    },
+    "component-dialog": {
+      "projectType": "library",
+      "root": "projects/component-dialog",
+      "sourceRoot": "projects/component-dialog/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/component-dialog/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/component-dialog/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/component-dialog/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/component-dialog/src/test.ts",
+            "tsConfig": "projects/component-dialog/tsconfig.spec.json",
+            "karmaConfig": "projects/component-dialog/karma.conf.js"
+          }
+        }
+      }
     }
-  },
-  "defaultProject": "taskbox"
+  }
 }

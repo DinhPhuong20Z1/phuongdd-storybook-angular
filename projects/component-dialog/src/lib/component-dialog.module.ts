@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { ComponentDialogComponent } from './component-dialog.component';
 
 
@@ -8,6 +9,7 @@ import { ComponentDialogComponent } from './component-dialog.component';
     ComponentDialogComponent
   ],
   imports: [
+    MatButtonModule
   ],
   exports: [
     ComponentDialogComponent

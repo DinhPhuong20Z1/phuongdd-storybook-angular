@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { BrowserModule } from '@angular/platform-browser';
 import { CustomButtonComponent } from './custom-button.component';
 
@@ -10,7 +11,8 @@ import { CustomButtonComponent } from './custom-button.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatButtonModule
   ],
   exports: [
     CustomButtonComponent,

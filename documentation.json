@@ -803,7 +803,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-a4d8f4b15aa621261202d5e6e4e93a9948f52eeb7e5a390260435f0c6fa18d351d46abd2f638229203bf329a7fb7d8761d2ef2eb4db9e71bed33b12b36f3e104",
+            "id": "component-AppComponent-76ad6188e1d8808131206b87f43af182acd263de6a9e8d52692204a50183dc2d2c9962b670f248ff890f156cf0485b38724cb38093a7137bc6bb5d5f6ff849da",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -824,7 +824,7 @@
             "propertiesClass": [
                 {
                     "name": "title",
-                    "defaultValue": "'taskbox'",
+                    "defaultValue": "'phuongdd-storybook-angular'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
@@ -841,7 +841,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.css'],\r\n})\r\nexport class AppComponent {\r\n  title = 'taskbox';\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.css'],\r\n})\r\nexport class AppComponent {\r\n  title = 'phuongdd-storybook-angular';\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -2180,7 +2180,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/image-zoom/src/test.ts",
+                "file": "projects/custom-button/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2190,7 +2190,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/custom-button/src/test.ts",
+                "file": "projects/image-zoom/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2230,21 +2230,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\r\n  production: false\r\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  production: true\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false\r\n}"
             },
             {
                 "name": "icons",
@@ -2330,7 +2330,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/image-multiple.stories.ts",
+                "file": "src/app/components/stories/date-picker.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2340,7 +2340,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/date-picker.stories.ts",
+                "file": "src/app/components/stories/image-multiple.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2378,7 +2378,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/image-zoom/src/test.ts",
+                "file": "projects/custom-button/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -2387,7 +2387,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/custom-button/src/test.ts",
+                "file": "projects/image-zoom/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -2475,11 +2475,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/dialog.stories.ts",
+                "file": "src/app/components/stories/date-picker.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ComponentDialogComponent>",
-                "defaultValue": "(args: ComponentDialogComponent) => ({\r\n    props: args,\r\n})"
+                "type": "Story<ComponentDatePickerComponent>",
+                "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2495,21 +2495,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/date-picker.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ComponentDatePickerComponent>",
-                "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/stories/image-zoom.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ImageZoomComponent>",
                 "defaultValue": "(args: ImageZoomComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/stories/dialog.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ComponentDialogComponent>",
+                "defaultValue": "(args: ComponentDialogComponent) => ({\r\n    props: args,\r\n})"
             }
         ],
         "functions": [],
@@ -2602,27 +2602,6 @@
                     "type": "literal type"
                 }
             ],
-            "projects/image-zoom/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/image-zoom/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/image-zoom/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
-                }
-            ],
             "projects/custom-button/src/test.ts": [
                 {
                     "name": "context",
@@ -2639,6 +2618,27 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/custom-button/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/image-zoom/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/image-zoom/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/image-zoom/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -2687,18 +2687,6 @@
                     "defaultValue": "(args: ComponentDialogComponent) => ({\r\n    props: args,\r\n})"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\r\n  production: false\r\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -2709,6 +2697,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  production: true\r\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -2859,28 +2859,6 @@
                     "defaultValue": "(args: CustomButtonComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/app/components/stories/image-multiple.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/stories/image-multiple.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/stories/image-multiple.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<MultipleImageComponent>",
-                    "defaultValue": "(args: MultipleImageComponent) => ({\r\n  props: args,\r\n})"
-                }
-            ],
             "src/app/components/stories/date-picker.stories.ts": [
                 {
                     "name": "Primary",
@@ -2901,6 +2879,28 @@
                     "deprecationMessage": "",
                     "type": "Story<ComponentDatePickerComponent>",
                     "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/app/components/stories/image-multiple.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stories/image-multiple.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stories/image-multiple.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<MultipleImageComponent>",
+                    "defaultValue": "(args: MultipleImageComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/app/components/stories/image-zoom.stories.ts": [

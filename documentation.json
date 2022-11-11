@@ -850,7 +850,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<!-- <lib-custom-button color='green' size=\"large\"  ></lib-custom-button>\r\n<lib-my-lib></lib-my-lib> -->\r\n<!-- <date-range-picker-selection-strategy-example></date-range-picker-selection-strategy-example> -->\r\n<lib-component-date-picker></lib-component-date-picker>\r\n<lib-image-zoom></lib-image-zoom>\r\n"
+            "templateData": "<!-- <lib-custom-button color='green' size=\"large\"  ></lib-custom-button>\r\n<lib-my-lib></lib-my-lib> -->\r\n<!-- <date-range-picker-selection-strategy-example></date-range-picker-selection-strategy-example> -->\r\n<lib-component-date-picker></lib-component-date-picker>\r\n<lib-image-zoom url=\"https://cdn.volio.vn/VOLIOR_56ce260416.jpg\" ></lib-image-zoom>\r\n"
         },
         {
             "name": "ButtonComponent",
@@ -1303,7 +1303,7 @@
         },
         {
             "name": "ImageZoomComponent",
-            "id": "component-ImageZoomComponent-18f5e330b924be45d72daed9633289ec3101bb4440e1fe2d5ad4301ae6cc975f9e82c17c2c6e37e30cb3371a9d424ab60cb5213144e4b7f288501f988a291af8",
+            "id": "component-ImageZoomComponent-2aca73997df0cdb2da1c3f240cbc5f92724ffd942ca2c97290c1ac1bd3fc0d1bdb56c9841c7d801162f99fe0cd1cc96f8ef541006e0a9e1e5e800bab3f9a0f67",
             "file": "projects/image-zoom/src/lib/image-zoom.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1313,10 +1313,20 @@
             "selector": "lib-image-zoom",
             "styleUrls": [],
             "styles": [],
-            "template": "<img\n  nz-image\n  width=\"200px\"\n  height=\"200px\"\n  nzSrc=\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\"\n  alt=\"\"\n/>\n",
+            "template": "<img\n  nz-image\n  width=\"200px\"\n  height=\"200px\"\n  nzSrc=\"{{url}}\"\n  alt=\"\"\n/>\n",
             "templateUrl": [],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "url",
+                    "defaultValue": "\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [
@@ -1338,7 +1348,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-image-zoom',\n  template: `\n    <img\n      nz-image\n      width=\"200px\"\n      height=\"200px\"\n      nzSrc=\"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\"\n      alt=\"\"\n    />\n  `,\n  styles: [\n  ]\n})\nexport class ImageZoomComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-image-zoom',\n  template: `\n    <img\n      nz-image\n      width=\"200px\"\n      height=\"200px\"\n      nzSrc=\"{{url}}\"\n      alt=\"\"\n    />\n  `,\n  styles: [\n  ]\n})\nexport class ImageZoomComponent implements OnInit {\n  @Input() url: string = \"https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png\";\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -1348,7 +1358,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 17
+                "line": 18
             },
             "implements": [
                 "OnInit"
@@ -1980,7 +1990,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/dialog.stories.ts",
+                "file": "src/app/components/stories/dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2090,7 +2100,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button.stories.ts",
+                "file": "src/app/components/stories/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2100,7 +2110,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/date-picker.stories.ts",
+                "file": "src/app/components/stories/date-picker.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2110,7 +2120,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/image-zoom.stories.ts",
+                "file": "src/app/components/stories/image-zoom.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2175,7 +2185,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button.stories.ts",
+                "file": "src/app/components/stories/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2225,7 +2235,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button.stories.ts",
+                "file": "src/app/components/stories/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CustomButtonComponent>",
@@ -2235,7 +2245,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/date-picker.stories.ts",
+                "file": "src/app/components/stories/date-picker.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ComponentDatePickerComponent>",
@@ -2245,7 +2255,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/dialog.stories.ts",
+                "file": "src/app/components/stories/dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ComponentDialogComponent>",
@@ -2255,7 +2265,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/image-zoom.stories.ts",
+                "file": "src/app/components/stories/image-zoom.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ImageZoomComponent>",
@@ -2415,12 +2425,12 @@
                     "type": "literal type"
                 }
             ],
-            "src/app/components/dialog.stories.ts": [
+            "src/app/components/stories/dialog.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/dialog.stories.ts",
+                    "file": "src/app/components/stories/dialog.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2430,7 +2440,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/dialog.stories.ts",
+                    "file": "src/app/components/stories/dialog.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ComponentDialogComponent>",
@@ -2577,12 +2587,12 @@
                     "defaultValue": "(args: Page) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/app/components/button.stories.ts": [
+            "src/app/components/stories/button.stories.ts": [
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button.stories.ts",
+                    "file": "src/app/components/stories/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2592,7 +2602,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button.stories.ts",
+                    "file": "src/app/components/stories/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2602,19 +2612,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/button.stories.ts",
+                    "file": "src/app/components/stories/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CustomButtonComponent>",
                     "defaultValue": "(args: CustomButtonComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/app/components/date-picker.stories.ts": [
+            "src/app/components/stories/date-picker.stories.ts": [
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/date-picker.stories.ts",
+                    "file": "src/app/components/stories/date-picker.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2624,19 +2634,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/date-picker.stories.ts",
+                    "file": "src/app/components/stories/date-picker.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ComponentDatePickerComponent>",
                     "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/app/components/image-zoom.stories.ts": [
+            "src/app/components/stories/image-zoom.stories.ts": [
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/image-zoom.stories.ts",
+                    "file": "src/app/components/stories/image-zoom.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2646,7 +2656,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/image-zoom.stories.ts",
+                    "file": "src/app/components/stories/image-zoom.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ImageZoomComponent>",
@@ -2792,7 +2802,7 @@
                 "linktype": "component",
                 "name": "ImageZoomComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -2892,96 +2902,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/date-picker.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/date-picker.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/dialog.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/dialog.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/image-zoom.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/image-zoom.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/app/components/notification.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2997,6 +2917,96 @@
                 "name": "DialogData",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/date-picker.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/date-picker.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/dialog.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/dialog.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/image-zoom.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stories/image-zoom.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

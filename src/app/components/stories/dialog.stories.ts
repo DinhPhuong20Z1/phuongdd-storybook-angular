@@ -6,9 +6,9 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 import { Component, Input } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NotificationComponent } from './notification.component';
 import { CustomButtonComponent } from 'projects/custom-button/src/public-api';
 import { ComponentDialogComponent } from 'projects/component-dialog/src/public-api';
+import { NotificationComponent } from '../notification.component';
 
 
 

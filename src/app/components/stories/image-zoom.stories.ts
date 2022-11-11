@@ -4,7 +4,7 @@ import { NzImageModule } from "ng-zorro-antd/image";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 export default {
-  title: 'Image-Zoom',
+  title: 'Image/basic',
   component: ImageZoomComponent,
   decorators: [
     moduleMetadata({
@@ -20,4 +20,7 @@ const Template: Story<ImageZoomComponent> = (args: ImageZoomComponent) => ({
 
 export const Primary = Template.bind({});
 Primary.args = {
+  url: "https://cdn.volio.vn/Lien_he_c7ee3c844c.webp",
+  disblePreview: false,
+
 };

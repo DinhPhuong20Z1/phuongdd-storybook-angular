@@ -169,7 +169,7 @@
 
 "@angular/cli@^14.2.9":
   version "14.2.9"
-  resolved "https://registry.npmjs.org/@angular/cli/-/cli-14.2.9.tgz"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-14.2.9.tgz#9e03259470eb3502cbbd0e463d5473ccb44f7444"
   integrity sha512-1cQE7mRrPyzk1sg2UwpbQ/sXQyPukPKdN69o4Bn59Scfl/4wUh53WRPAAHXNudgPYT2ZT3s9Jj2E1cdhi+gxyQ==
   dependencies:
     "@angular-devkit/architect" "0.1402.9"

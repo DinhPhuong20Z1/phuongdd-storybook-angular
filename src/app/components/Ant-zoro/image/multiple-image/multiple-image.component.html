@@ -1,0 +1,4 @@
+<nz-image-group>
+  <img *ngFor="let i of data" nz-image width="200px" [nzSrc]="i.url" [nzDisablePreview]="i.disblePreview" alt="" nzSrc="error"
+  [nzFallback]="fallback" />
+</nz-image-group>

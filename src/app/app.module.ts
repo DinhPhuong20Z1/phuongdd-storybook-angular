@@ -28,7 +28,7 @@ import * as AllIcons from '@ant-design/icons-angular/icons';
 
 import { registerLocaleData } from '@angular/common';
 import { ImageZoomModule } from 'projects/image-zoom/src/public-api';
-import { ImageModuleModule } from './components/Ant-zoro/image/image-module.module';
+import { ZoroModuleModule } from './components/Ant-zoro/zoro-module.module';
 
 
 
@@ -57,7 +57,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     ComponentDatePickerModule,
     ComponentDialogModule,
     ImageZoomModule,
-    ImageModuleModule
+    ZoroModuleModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }, { provide: NZ_ICONS, useValue: icons }],
   bootstrap: [AppComponent],

@@ -1392,6 +1392,68 @@
             ]
         },
         {
+            "name": "MenuZoroComponent",
+            "id": "component-MenuZoroComponent-586cd202b2487ef991caad088845242e59d4eecb428c5519f6d1316f8553a03ca79cdd3f0fc05e32566143ac0361084c0565993487aa45cd699a333b8d91d1d8",
+            "file": "src/app/components/Ant-zoro/menu/menu-zoro/menu-zoro.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-menu-zoro",
+            "styleUrls": [
+                "./menu-zoro.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./menu-zoro.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-menu-zoro',\n  templateUrl: './menu-zoro.component.html',\n  styleUrls: ['./menu-zoro.component.scss']\n})\nexport class MenuZoroComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./menu-zoro.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>menu-zoro works!</p>\n"
+        },
+        {
             "name": "MultipleImageComponent",
             "id": "component-MultipleImageComponent-976111738387c5b4ae1986a81912c3f834ea3d1e1b717ac4b3b0c78236bb72bcccac11ee3a8c32f38e098604ebed8190e1e5bec15c0e2aeac9e725e70d580466",
             "file": "src/app/components/Ant-zoro/image/multiple-image/multiple-image.component.ts",
@@ -1699,13 +1761,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-7aedf552267c36806c1e56661e28cf03347785c70ca568c5fa99aa3a081a81dfc5ba4ed448bd0256fe66def5c1506d9a1e333c8c22e8282b369f3893ba64020d",
+            "id": "module-AppModule-773a416448257d438bb31ecb991f37b272ee7ea6b559b998b0f5e4b67ad3a79bbb39b4de9b4e5e720b18100cf2f3b158dba981db82e1a819bd1a5438dac73edd",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { BrowserModule } from '@angular/platform-browser';\r\nimport { NgModule } from '@angular/core';\r\nimport { NgxsModule } from '@ngxs/store';\r\nimport { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';\r\nimport { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';\r\n\r\nimport { environment } from '../environments/environment';\r\nimport { AppComponent } from './app.component';\r\n\r\n\r\nimport { CustomButtonModule } from './../../projects/custom-button/src/lib/custom-button.module';\r\nimport { MyLibModule } from 'projects/my-lib/src/public-api';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\n\r\nimport { MaterialExampleModule } from '../material.module';\r\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\nimport { MatNativeDateModule } from '@angular/material/core';\r\nimport { HttpClientModule } from '@angular/common/http';\r\nimport { ComponentDatePickerModule } from 'projects/component-date-picker/src/public-api';\r\nimport { NotificationComponent } from './components/notification.component';\r\nimport { ComponentDialogModule } from 'projects/component-dialog/src/public-api';\r\nimport en from '@angular/common/locales/en';\r\n\r\nimport { NZ_ICONS } from 'ng-zorro-antd/icon';\r\nimport { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';\r\nimport { IconDefinition } from '@ant-design/icons-angular';\r\nimport * as AllIcons from '@ant-design/icons-angular/icons';\r\n\r\nimport { registerLocaleData } from '@angular/common';\r\nimport { ImageZoomModule } from 'projects/image-zoom/src/public-api';\r\nimport { ImageModuleModule } from './components/Ant-zoro/image/image-module.module';\r\n\r\n\r\n\r\nregisterLocaleData(en);\r\n\r\nconst antDesignIcons = AllIcons as {\r\n  [key: string]: IconDefinition;\r\n};\r\nconst icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])\r\n\r\n@NgModule({\r\n  declarations: [AppComponent, NotificationComponent],\r\n  imports: [\r\n    BrowserAnimationsModule,\r\n    FormsModule,\r\n    HttpClientModule,\r\n    MatNativeDateModule,\r\n    MaterialExampleModule,\r\n    ReactiveFormsModule,\r\n    BrowserModule,\r\n    // NgxsModule.forRoot([], { developmentMode: !environment.production, }),\r\n    // NgxsReduxDevtoolsPluginModule.forRoot(),\r\n    // NgxsLoggerPluginModule.forRoot({ disabled: environment.production, }),\r\n    CustomButtonModule,\r\n    MyLibModule,\r\n    ComponentDatePickerModule,\r\n    ComponentDialogModule,\r\n    ImageZoomModule,\r\n    ImageModuleModule\r\n  ],\r\n  providers: [{ provide: NZ_I18N, useValue: en_US }, { provide: NZ_ICONS, useValue: icons }],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+            "sourceCode": "import { BrowserModule } from '@angular/platform-browser';\r\nimport { NgModule } from '@angular/core';\r\nimport { NgxsModule } from '@ngxs/store';\r\nimport { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';\r\nimport { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';\r\n\r\nimport { environment } from '../environments/environment';\r\nimport { AppComponent } from './app.component';\r\n\r\n\r\nimport { CustomButtonModule } from './../../projects/custom-button/src/lib/custom-button.module';\r\nimport { MyLibModule } from 'projects/my-lib/src/public-api';\r\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\r\n\r\nimport { MaterialExampleModule } from '../material.module';\r\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\r\nimport { MatNativeDateModule } from '@angular/material/core';\r\nimport { HttpClientModule } from '@angular/common/http';\r\nimport { ComponentDatePickerModule } from 'projects/component-date-picker/src/public-api';\r\nimport { NotificationComponent } from './components/notification.component';\r\nimport { ComponentDialogModule } from 'projects/component-dialog/src/public-api';\r\nimport en from '@angular/common/locales/en';\r\n\r\nimport { NZ_ICONS } from 'ng-zorro-antd/icon';\r\nimport { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';\r\nimport { IconDefinition } from '@ant-design/icons-angular';\r\nimport * as AllIcons from '@ant-design/icons-angular/icons';\r\n\r\nimport { registerLocaleData } from '@angular/common';\r\nimport { ImageZoomModule } from 'projects/image-zoom/src/public-api';\r\nimport { ZoroModuleModule } from './components/Ant-zoro/zoro-module.module';\r\n\r\n\r\n\r\nregisterLocaleData(en);\r\n\r\nconst antDesignIcons = AllIcons as {\r\n  [key: string]: IconDefinition;\r\n};\r\nconst icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])\r\n\r\n@NgModule({\r\n  declarations: [AppComponent, NotificationComponent],\r\n  imports: [\r\n    BrowserAnimationsModule,\r\n    FormsModule,\r\n    HttpClientModule,\r\n    MatNativeDateModule,\r\n    MaterialExampleModule,\r\n    ReactiveFormsModule,\r\n    BrowserModule,\r\n    // NgxsModule.forRoot([], { developmentMode: !environment.production, }),\r\n    // NgxsReduxDevtoolsPluginModule.forRoot(),\r\n    // NgxsLoggerPluginModule.forRoot({ disabled: environment.production, }),\r\n    CustomButtonModule,\r\n    MyLibModule,\r\n    ComponentDatePickerModule,\r\n    ComponentDialogModule,\r\n    ImageZoomModule,\r\n    ZoroModuleModule\r\n  ],\r\n  providers: [{ provide: NZ_I18N, useValue: en_US }, { provide: NZ_ICONS, useValue: icons }],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1729,9 +1791,6 @@
                             "name": "CustomButtonModule"
                         },
                         {
-                            "name": "ImageModuleModule"
-                        },
-                        {
                             "name": "ImageZoomModule"
                         },
                         {
@@ -1739,6 +1798,9 @@
                         },
                         {
                             "name": "MyLibModule"
+                        },
+                        {
+                            "name": "ZoroModuleModule"
                         }
                     ]
                 },
@@ -1901,50 +1963,6 @@
             ]
         },
         {
-            "name": "ImageModuleModule",
-            "id": "module-ImageModuleModule-1069ecff802176589432c61ac47ab1d1472d6de69f989d6e5804e4da872bc3af2d97ce47423746e9934b268803ec04542f239530f4bce04d12ba33f6a331a72f",
-            "description": "",
-            "deprecationMessage": "",
-            "deprecated": false,
-            "file": "src/app/components/Ant-zoro/image/image-module.module.ts",
-            "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { MultipleImageComponent } from './multiple-image/multiple-image.component';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { ScrollingModule } from '@angular/cdk/scrolling';\nimport { DragDropModule } from '@angular/cdk/drag-drop';\nimport { NzImageModule } from 'ng-zorro-antd/image';\n\n@NgModule({\n  declarations: [MultipleImageComponent],\n  imports: [\n  CommonModule,\n    BrowserModule,\n    FormsModule,\n    HttpClientModule,\n    HttpClientJsonpModule,\n    ReactiveFormsModule,\n    BrowserAnimationsModule,\n    ScrollingModule,\n    DragDropModule,\n    NzImageModule\n  ],\n  bootstrap: [ MultipleImageComponent ],\n})\nexport class ImageModuleModule { }\n",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "MultipleImageComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": []
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": [
-                        {
-                            "name": "MultipleImageComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        },
-        {
             "name": "ImageZoomModule",
             "id": "module-ImageZoomModule-e504a0ea4aa77e5703512b20b2b448767f68d3b76e04056afab7886dfbf6b29899119e88aa6abde399150b89a2b54564fa02f87eb469906c212124dc5fe7c45b",
             "description": "",
@@ -2067,6 +2085,53 @@
                     "elements": []
                 }
             ]
+        },
+        {
+            "name": "ZoroModuleModule",
+            "id": "module-ZoroModuleModule-76c340f6ab066f03656f0ede8d466c8172fea5daece63ccd7fc26fd330da3b56887ccecc3119c3c0d4744ce5bbe60c8cdaf6f37bac99d1df2be0c9c910fffbf6",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/components/Ant-zoro/zoro-module.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { ScrollingModule } from '@angular/cdk/scrolling';\nimport { DragDropModule } from '@angular/cdk/drag-drop';\nimport { NzImageModule } from 'ng-zorro-antd/image';\nimport { MultipleImageComponent } from './image/multiple-image/multiple-image.component';\nimport { MenuZoroComponent } from './menu/menu-zoro/menu-zoro.component';\n\n\n\n@NgModule({\n  declarations: [MultipleImageComponent, MenuZoroComponent],\n  imports: [\n    CommonModule,\n    BrowserModule,\n    FormsModule,\n    HttpClientModule,\n    HttpClientJsonpModule,\n    ReactiveFormsModule,\n    BrowserAnimationsModule,\n    ScrollingModule,\n    DragDropModule,\n    NzImageModule\n  ],\n  bootstrap: [ MultipleImageComponent ],\n})\nexport class ZoroModuleModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "MenuZoroComponent"
+                        },
+                        {
+                            "name": "MultipleImageComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "MultipleImageComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
         }
     ],
     "miscellaneous": {
@@ -2115,7 +2180,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/custom-button/src/test.ts",
+                "file": "projects/image-zoom/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2125,7 +2190,7 @@
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/image-zoom/src/test.ts",
+                "file": "projects/custom-button/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2165,21 +2230,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\r\n  production: true\r\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  production: false\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: true\r\n}"
             },
             {
                 "name": "icons",
@@ -2265,7 +2330,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/date-picker.stories.ts",
+                "file": "src/app/components/stories/image-multiple.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2275,7 +2340,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/image-multiple.stories.ts",
+                "file": "src/app/components/stories/date-picker.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2313,7 +2378,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/custom-button/src/test.ts",
+                "file": "projects/image-zoom/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -2322,7 +2387,7 @@
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/image-zoom/src/test.ts",
+                "file": "projects/custom-button/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -2410,16 +2475,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/stories/date-picker.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ComponentDatePickerComponent>",
-                "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/stories/dialog.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2435,6 +2490,16 @@
                 "deprecationMessage": "",
                 "type": "Story<MultipleImageComponent>",
                 "defaultValue": "(args: MultipleImageComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/stories/date-picker.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ComponentDatePickerComponent>",
+                "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Template",
@@ -2537,27 +2602,6 @@
                     "type": "literal type"
                 }
             ],
-            "projects/custom-button/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/custom-button/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/custom-button/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
-                }
-            ],
             "projects/image-zoom/src/test.ts": [
                 {
                     "name": "context",
@@ -2574,6 +2618,27 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/image-zoom/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/custom-button/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/custom-button/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/custom-button/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -2622,18 +2687,6 @@
                     "defaultValue": "(args: ComponentDialogComponent) => ({\r\n    props: args,\r\n})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\r\n  production: true\r\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -2644,6 +2697,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -2794,28 +2859,6 @@
                     "defaultValue": "(args: CustomButtonComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
-            "src/app/components/stories/date-picker.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/stories/date-picker.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/stories/date-picker.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ComponentDatePickerComponent>",
-                    "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
-                }
-            ],
             "src/app/components/stories/image-multiple.stories.ts": [
                 {
                     "name": "Primary",
@@ -2836,6 +2879,28 @@
                     "deprecationMessage": "",
                     "type": "Story<MultipleImageComponent>",
                     "defaultValue": "(args: MultipleImageComponent) => ({\r\n  props: args,\r\n})"
+                }
+            ],
+            "src/app/components/stories/date-picker.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stories/date-picker.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stories/date-picker.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ComponentDatePickerComponent>",
+                    "defaultValue": "(args: ComponentDatePickerComponent) => ({\r\n  props: args,\r\n})"
                 }
             ],
             "src/app/components/stories/image-zoom.stories.ts": [
@@ -3105,6 +3170,15 @@
                 "name": "MultipleImageComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/Ant-zoro/menu/menu-zoro/menu-zoro.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MenuZoroComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {

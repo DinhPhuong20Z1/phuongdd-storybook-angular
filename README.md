@@ -28,7 +28,7 @@ This template ships with the main Angular and Storybook configuration files you'
 
     ```shell
     # Navigate to the directory
-    cd taskbox/
+    cd phuongdd-storybook-angular/
 
     # Install the dependencies
     npm install
@@ -36,7 +36,7 @@ This template ships with the main Angular and Storybook configuration files you'
 
 1.  **Open the source code and start editing!**
 
-    Open the `taskbox` directory in your code editor of choice and building your first component!
+    Open the `phuongdd-storybook-angular` directory in your code editor of choice and building your first component!
 
 1.  **Browse your stories!**
 

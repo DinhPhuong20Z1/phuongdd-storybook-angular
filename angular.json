@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "taskbox": {
+    "phuongdd-storybook-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/taskbox",
+            "outputPath": "dist/phuongdd-storybook-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "taskbox:build:production"
+              "browserTarget": "phuongdd-storybook-angular:build:production"
             },
             "development": {
-              "browserTarget": "taskbox:build:development"
+              "browserTarget": "phuongdd-storybook-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,20 +82,20 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "taskbox:build"
+            "browserTarget": "phuongdd-storybook-angular:build"
           }
         },
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
-            "browserTarget": "taskbox:build:development",
+            "browserTarget": "phuongdd-storybook-angular:build:development",
             "port": 6006
           }
         },
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
-            "browserTarget": "taskbox:production"
+            "browserTarget": "phuongdd-storybook-angular:production"
           }
         }
       }

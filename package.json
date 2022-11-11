@@ -1,12 +1,9 @@
 {
-  "name": "phuongdd-taskbox",
-  "version": "0.1.2",
-  "description": "Starter template to get up and running quickly with Angular and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-angular-template"
-  },
+  "name": "@phuongdd-storybook-angular/image-zoom",
+  "version": "0.1.3",
+  "description": "Storybook design systems tutorial",
+  "author": "phuondd2001@gmail.com",
+  "repository": "https://github.com/DinhPhuong20Z1/phuongdd-storybook-angular",
   "bugs": {
     "url": "https://github.com/chromaui/intro-storybook-angular-template/issues"
   },
@@ -78,5 +75,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "~4.6.2"
-  }
+  },
+  "main": "index.js"
 }
